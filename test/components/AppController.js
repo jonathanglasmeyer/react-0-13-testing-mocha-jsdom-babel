@@ -25,22 +25,40 @@ describe('AppController', () => {
   });
 
   it('its state has exactly one key named "foo"', () => {
-    appController.state.should.have.all.keys('foo');
+    (appController.state).should.have.all.keys('foo');
   });
 
-  describe('child', () => {
-    const renderer = TestUtils.createRenderer();
-    renderer.render(<AppTestController/>);
-    const renderOutput = renderer.getRenderOutput();
+  describe('it renders', () => {
+    const renderResult = render(<AppTestController />);
 
-    it('is of type App', () => {
-      const childType = renderOutput.type;
+    it('a child of type App', () => {
+      const childType = renderResult.type;
       TestUtils.isCompositeComponentWithType(childType, App);
+
     });
 
-    it('has exactly one prop with the key "foo"', () => {
-      const props = renderOutput.props;
-      props.should.all.keys('foo');
+    it('which gets exactly one prop with the key "foo"', () => {
+      const props = renderResult.props;
+      props.should.have.all.keys('foo');
+    });
+
+  });
+
+
+});
+describe('App', () => {
+
+  describe('renders', () => {
+    const propValue = 'fooo';
+    const renderResult = render(<App foo={propValue}/>);
+
+    it('a paragraph', () => {
+      (renderResult.type).should.equal('p');
+    });
+
+    it('with the value of the \'foo\'-prop', () => {
+      (renderResult.props.children).should.equal(propValue);
+
     });
 
   });

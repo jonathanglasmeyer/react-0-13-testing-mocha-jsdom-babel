@@ -10,9 +10,9 @@ export default class App extends Component {
 
   render() {
 
-    return <div>
+    return <p>
       {this.props.foo}
-    </div>;
+    </p>;
   }
 
 };
