@@ -38,7 +38,7 @@ describe('AppController', () => {
       TestUtils.isCompositeComponentWithType(childType, App);
     });
 
-    it('has one prop with the key "foo"', () => {
+    it('has exactly one prop with the key "foo"', () => {
       const props = renderOutput.props;
       props.should.all.keys('foo');
     });
