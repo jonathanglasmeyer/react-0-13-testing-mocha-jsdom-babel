@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "description": "Testing React components with Mocha, Chai, JSDom, React 0.13 & Babel",
-",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel/register --recursive -w --watch-extensions jsx"
   },
