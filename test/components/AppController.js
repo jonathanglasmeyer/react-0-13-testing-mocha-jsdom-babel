@@ -14,7 +14,6 @@ import App from '../../components/app/App.jsx';
 describe('AppController', () => {
   let appController;
 
-
   before('render and locate element', () => {
     appController = TestUtils.renderIntoDocument(
       <AppTestController/>
@@ -45,6 +44,5 @@ describe('AppController', () => {
     });
 
   });
-
 
 });

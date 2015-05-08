@@ -4,10 +4,6 @@ import React, {Component, PropTypes} from 'react';
 
 import App from './App.jsx';
 
-const styles = {
-  background: 'red'
-}
-
 export default class AppTestController extends Component {
 
   constructor(props) {
@@ -22,5 +18,3 @@ export default class AppTestController extends Component {
   }
 
 };
-
-module.exports = AppTestController;

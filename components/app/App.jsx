@@ -2,10 +2,6 @@
 
 import React, {Component, PropTypes} from 'react';
 
-const styles = {
-
-}
-
 export default class App extends Component {
 
   static propTypes = {
@@ -14,11 +10,9 @@ export default class App extends Component {
 
   render() {
 
-    return <div style={styles}>
+    return <div>
       {this.props.foo}
     </div>;
   }
 
 };
-
-module.exports = App;
