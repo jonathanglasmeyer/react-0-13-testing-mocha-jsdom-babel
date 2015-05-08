@@ -11,6 +11,12 @@ const TestUtils = React.addons.TestUtils;
 import AppTestController from '../../components/app/AppTestController.jsx';
 import App from '../../components/app/App.jsx';
 
+function render(component) {
+  const renderer = TestUtils.createRenderer();
+  renderer.render(component);
+  return renderer.getRenderOutput();
+}
+
 describe('AppController', () => {
   let appController;
 
