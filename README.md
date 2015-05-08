@@ -1,4 +1,5 @@
 ## Testing React components with Mocha, Chai, JSDom, React 0.13 & Babel
+![mocha](https://cloud.githubusercontent.com/assets/3755413/7539800/c2d19c4e-f5a9-11e4-8080-7a7a64a628b9.png)
 
 This is a demo/proof of concept demonstrating how to test React components with React 0.13 style classes and babel (stage 0), using the idea of [smart and dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) for dependency injecting mock-data into the components we want to test via TestController components.
 
