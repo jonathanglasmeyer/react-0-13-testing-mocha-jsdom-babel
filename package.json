@@ -1,12 +1,13 @@
 {
-  "name": "react-testing-mocha-jsdom",
+  "name": "react-0-13-testing-mocha-jsdom-babel",
   "private": true,
   "version": "1.0.0",
-  "description": "Unit testing React with Mocha and jsdom",
+  "description": "Testing React components with Mocha, Chai, JSDom, React 0.13 & Babel",
+",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel/register --recursive -w --watch-extensions jsx"
   },
-  "author": "Jess Telford <hi@jes.st>",
+  "author": "Jonathan Werner <jwerner@posteo.de>",
   "license": "ISC",
   "devDependencies": {
     "babel": "^5.1.13",
